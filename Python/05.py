@@ -34,9 +34,9 @@ def find_row(line):
 
     for char in row_code:
         if char == 'F':
-            rows = rows[:int(len(rows) / 2)]
+            rows = rows[:len(rows) // 2]
         else:
-            rows = rows[int(len(rows) / 2):]
+            rows = rows[len(rows) // 2:]
 
     return rows[0]
 
@@ -46,8 +46,8 @@ def find_column(line):
 
     for char in col_code:
         if char == 'L':
-            cols = cols[:int(len(cols) / 2)]
+            cols = cols[:len(cols) // 2]
         else:
-            cols = cols[int(len(cols) / 2):]
+            cols = cols[len(cols) // 2:]
 
     return cols[0]
