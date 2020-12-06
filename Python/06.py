@@ -1,6 +1,5 @@
 def part1(data):
     groups = data.split('\n\n')
-    # print(groups)
     total_count = 0
     for group in groups:
         group = group.replace('\n', '')

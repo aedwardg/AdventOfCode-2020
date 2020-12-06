@@ -1,12 +1,12 @@
 import 'dart:io';
 // Change these Daily:
-import './04.dart';
+import './05.dart';
 
-String day = '04';
+String day = '05';
 
 void main() async {
   // Change to readAsString when needed - Days: 4
-  var contents = await File('../../inputs/$day.txt').readAsString();
+  var contents = await File('../../inputs/$day.txt').readAsLines();
   // print(contents);
   var dataset = parseContents(contents);
 
